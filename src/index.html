@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <title>
+    Imersão Dev - Aula 05
+  </title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="div-centro">
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+      <select name="opcoes" id="opcoes" onchange="setarOpcao()">
+        <option value="" disabled selected hidden>Escolha entre...</option>
+        <option value="imagem">Imagem</option>
+        <option value="trailer">Trailer</option>
+
+      </select>
+      <input type="text" id="nomeFilme" autocomplete="off" name="nomeFilme" placeholder="Nome do filme">
+      <input type="text" id="imgFilme" autocomplete="off" name="imgFilme" placeholder="Endereço da imagem">
+      <input type="text" id="trailerFilme" name="trailerFilme" autocomplete="off" placeholder="Tag embed do trailer">
+      <button id="btnAdicionar" onclick="adicionarFilmeFavorito()">Adicionar filme</button>
+      <div id="dicas"></div>
+    </div>
+    <div class="alinharEsq">
+      <p>Imagens <span id="qtdImagens">(0)</span></p>
+    </div>
+    <div id="listaImagensFilmes">
+    </div>
+    
+    <div class="alinharEsq">
+      <p>Trailers <span id="qtdTrailers">(0)</span></p>
+    </div>
+    <div id="listaTrailersFilmes">
+      
+    </div>
+
+  </div>
+</body>
+
+</html>

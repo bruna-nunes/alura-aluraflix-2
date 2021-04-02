@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.alinharEsq {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+body {
+  padding: 10px;
+  width: 100vw;
+  overflow-x: hidden;
+  
+}
+.page-logo {
+  width: 150px;
+  height: 30px;
+  background-color: rgba(232, 59, 53, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+}
+.div-centro {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  width: 23vw;
+  max-width: 25vw;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 20px 5px 5px 20px;
+  background-color: #f0f0f0;
+  box-shadow: 1px 1px 20px #c9c9c9;
+  transition: all 0.5s;
+}
+
+input, select {
+  /*border: 2px solid #6C63FF;*/
+  border: none;
+  height: 35px;
+  width: 80%;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 20px;
+}
+
+input:focus{
+   box-shadow: 1px 1px 20px #c9c9c9;
+}
+button {
+  background-color: rgb(232, 59, 53);
+  border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+  color: white;
+  margin-top: 20px;
+  border: none;
+}
+
+#listaImagensFilmes, #listaTrailersFilmes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  width: 99vw;
+  max-width: 99vw;
+  margin-bottom: 20px;
+}
+
+.filmeImg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.filmeTrailer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.filmeImg img{
+  border-radius: 5px;
+}
+
+.filmeImg p, .filmeTrailer p {
+  color: rgb(28, 28, 28);
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+#dicas {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgba(232, 59, 53, 0.8);;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (max-width:479px) { /* smartphones, Android phones, landscape iPhone */ 
+  .div-centro {
+    width: 95vw;
+    max-width: 95vw;
+  }
+  
+  #listaImagensFilmes, #listaTrailersFilmes  {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .filmeImg {
+    padding: 10px;
+    width: 100%!important;
+  }
+}
+
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ 
+  .div-centro {
+    width: 95vw;
+    max-width: 95vw;
+  }
+  
+  .filmeImg {
+    padding: 10px;
+    width: 40%!important;
+  }
+}
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .div-centro {
+    width: 60vw;
+    max-width: 60vw;
+  }
+  .filmeImg {
+    padding: 10px;
+    width: 30%!important;
+  }
+}
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .div-centro {
+    width: 40vw;
+    max-width: 40vw;
+  }
+  .filmeImg {
+    padding: 10px;
+    width: 21%!important;
+  }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+  .div-centro {
+    width: 23vw;
+    max-width: 23vw;
+  }
+  .filmeImg {
+    padding: 10px;
+    width: 16%!important;
+  }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+  .filmeImg {
+    padding: 10px;
+    width: 14%!important;
+  }
+}
